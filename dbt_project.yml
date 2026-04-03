@@ -13,3 +13,7 @@ clean-targets:
 models:
   dbt_testers:
     +materialized: table
+seeds:
+  dbt_testers:
+    ops:
+      +schema: "ops"
