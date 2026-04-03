@@ -35,3 +35,9 @@ cd dbt_scooters
 - `dbt docs serve` - запускает локальный сервер для просмотра документации
 
 Примечание: если виртуальное окружение не активно, используйте `uv run dbt`.
+
+## Работа с базой
+Модели dbt настроены на работу с базой scooters-data-uploader, которую можно установить локально себе:
+```bash
+uvx scooters-data-uploader upload "postgresql://<user>:<password>@<host>:<port>/<database>"
+```
